@@ -1,0 +1,36 @@
+<form action="/register" method="get">
+    <label for="nombre">Nombre y apellido:</label>
+    <input type="text" name="nombre" id="nombre">
+
+    <label for="usuario">Usuario:</label>
+    <input type="text" name="usuario" id="usuario">
+
+    <label for="nacimiento">Fecha de nacimiento:</label>
+    <input type="date" name="fecha">
+
+    <label for="domicilio">domicilio:</label>
+    <input type="text" name="domicilio">
+
+    <label for="perfilDeUsuario">Perfil de usuario:</label>
+    <input type="radio" name="perfilDeUsuario" value="Comprar">
+    <input type="radio" name="perfilDeUsuario" value="Vender">
+
+    <label for="categoriasDeInteres">Categorias de interes:</label>
+    <input type="checkbox" name="interes" value="Electro">
+    <input type="checkbox" name="interes" value="Moda">
+    <input type="checkbox" name="interes" value="Hogar">
+    <input type="checkbox" name="interes" value="Jugueteria">
+    <input type="checkbox" name="interes" value="Vida sana">
+
+    <label>Seleccionar una imagen para el perfil:</label>
+    <input type="file" name="avatar" accept=".jpg">
+
+    <label for="contraseña">Ingrese su contraseña:</label>
+    <input type="password" name="contraseña">
+
+    <label for="confirmarContraseña">Confirme su contraseña:</label>
+    <input type="password" name="contraseña">
+
+    <button type="reset">Cancelar</button>
+    <button type="submit">Enviar</button>
+</form>

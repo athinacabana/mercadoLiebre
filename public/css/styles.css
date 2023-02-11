@@ -1,0 +1,294 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* HEADER */
+
+header{
+    background-color: #EAC926;
+}
+
+.navBar ul{
+    display: none;
+}
+
+.contenedor-lupa{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 50%;
+    margin-right: 25px;
+}
+
+.barra-de-busqueda{
+    display: flex;
+    align-items: center;        
+}
+
+.buscar{
+    padding: 12px;
+    width: 95%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.lupa{
+    position: relative;
+    right: 20px;
+}
+
+.texto-compraEnCuotas{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.burger-menu{
+    margin:10px auto;
+    background-color: #1259c3;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars{
+    margin-top: 2px;
+    color: white;
+    font-size: 25px;
+}
+
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/* BODY */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* MAIN */
+
+main{
+    margin: 20px auto;
+    width: 90%;
+}
+
+main section article{
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+main section article p{
+    margin-bottom: 10px;
+}
+
+.detalles-del-producto{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+}
+
+.caja-descripcion{
+    display: flex;
+}
+
+.titulares{
+    margin: 10px 0;
+    font-size: 24px;
+    color: #666;
+}
+
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+    display: flex;
+}
+
+.descuento{
+    color:#39b54a;
+    font-size: 16px;
+    flex-grow: 0.7;
+    display: flex;
+    align-items: center;
+}
+
+.descripcion{
+    font-size: 16px;
+    display: none;
+    order: 3;
+}
+
+.fa-solid{
+    margin:0 4px;
+}
+
+.camion{
+    position: relative;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    color: #39b54a;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 20px 2%;
+    border-top: solid 1px darkgray;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer-icono{
+    font-size: 2em;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 35px;
+    color:#1259c3;
+}
+
+footer p{
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:#666;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+    
+    /*HEADER*/
+
+    .navBar ul{
+        display: inline;
+        font-size: 12px;
+        list-style: none;
+    }
+
+   .navBar ul li{
+        margin: 0 0 3px 10px;
+        
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .descripcion{
+        display: inline;
+    }
+
+    .loginBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .loginBar ul{
+        display: flex;
+    }
+    
+    /* MAIN */
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sombras{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    article{
+        width: 40%;
+        margin: 0px 5px;
+    }
+
+    .titulares{
+        width: 100%;
+    }
+
+    .fa-hand-holding-usd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1280px){
+    
+    .navBar ul{
+        font-size: 15px;
+    }
+
+    .caja-descripcion{
+        display: none;
+    }
+
+    article:hover .contenedor-descripcion{
+        display: block;
+    }
+
+    article:hover .camion{
+        transition: 0.5s;
+        rotate: -90deg;
+    }
+
+    .sombras{
+        box-shadow: none;
+    }
+    
+    article:hover .sombras{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 300ms ease-in-out;
+    }
+
+    article{
+        width: 23%;
+        margin: 0px 5px;
+    }
+
+    .flex-footer{
+        display: flex;
+    }
+    
+}
