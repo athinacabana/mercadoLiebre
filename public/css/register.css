@@ -1,0 +1,68 @@
+.register {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.register h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register form {
+    display: inline-block;
+    text-align: left;
+}
+
+.register form input[type="text"],
+.register form input[type="email"],
+.register form input[type="password"],
+.register form input[type="date"],
+.register form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.register form input[type="submit"],
+.register form input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.register form input[type="submit"]:hover,
+.register form input[type="reset"]:hover {
+    background-color: navy;
+}
+
+.register form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.register .profile,
+.register .interests {
+    margin-bottom: 20px;
+}
+
+.register .profile input[type="radio"],
+.register .interests input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.register .interests div {
+    margin-bottom: 10px;
+}
